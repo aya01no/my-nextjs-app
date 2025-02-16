@@ -1,8 +1,13 @@
+import Link from "next/link";
+
 export default function Home() {
   return (
     <div>
-      <h1>Next.jsで初めての編集</h1>
-      <p>このページはカスタムページです。</p>
+      <h1>トップページ</h1>
+      <p>このページからaboutページへ移動できます。</p>
+      <Link href="/about">
+      <button>Aboutページへ移動</button>
+      </Link>
       </div>
   );
 }
